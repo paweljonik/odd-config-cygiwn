@@ -27,8 +27,8 @@
 export EXECIGNORE="*.dll"
 
 # Evaluate if user is admin and set $PS1 var accordingly
-id -G | grep -qE '\<(114|544)\>' && PS1='\[\e]0;\w\a\]\n\[\e[31m\]root@\h \[\e[34m\]\w\[\e[0m\]# ' ||
-PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[34m\]\w\[\e[0m\]\$ '
+id -G | grep -qE '\<(114|544)\>' && PS1='\[\e]0;\w\a\]\n\[\e[31m\]root@\h:\[\e[34m\]\w\[\e[0m\]# ' ||
+PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h:\[\e[34m\]\w\[\e[0m\]\$ '
 
 # Uncomment to use the terminal colours set in DIR_COLORS
 # eval "$(dircolors -b /etc/DIR_COLORS)"
