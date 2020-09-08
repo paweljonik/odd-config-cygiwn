@@ -41,6 +41,10 @@
 "\eOH": beginning-of-line
 "\eOF": end-of-line
 
+# Allow forward/backward word w/ ctrl+arrows
+"\e[1;5C": forward-word   # ctrl + right
+"\e[1;5D": backward-word  # ctrl + left 
+
 # Allow 8-bit input/output
 #set meta-flag on
 #set convert-meta off
